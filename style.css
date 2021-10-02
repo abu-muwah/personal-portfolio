@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: black;
+    font-family: Gentium Basic;
+    max-width: 80%;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    border-bottom: solid 1px rgb(214, 214, 214);
+}
+
+.logo {
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+#navbar {
+    display: flex;
+    justify-self: flex-end;
+    margin: 10px;
+}
+
+li {
+    margin: 10px;
+    list-style-type: none;
+}
+
+main {
+    max-width: 90%;
+    margin: 100px auto auto auto;
+}
+
+.hi {
+    font-size: 40px;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 400px) {
+    p {
+        font-size: 21px;
+    }
+}
+
+.background-info {
+    padding-top: 60px;
+    margin-bottom: 0;
+}
+
+.right-side {
+    padding-left: 40px;
+}
+
+.image {
+    display: block;
+    max-width: 100%;
+}
+
+#projects {
+    display: block;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-top: 40px;
+    margin: auto;
+    width: 100%;
+}
+
+.project-links {
+    display: block;
+    border: 50px;
+    border-radius: 3px;
+    align-items: center;
+    padding: 2px 5px;
+    line-height: 35px;
+}
+
+.project-links:hover {
+    border: 10px;
+    background-color: lightgray;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin: auto;
+    padding-top: 40px;
+    width: 100%;
+}
+
+.description {
+    font-size: 15px;
+    margin: 0;
+}
+
+.contact-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 10px 0px 10px;
+}
+
+.contact-links:hover {
+    transform: scale(1.1);
+}
+
+.github {
+    margin-left: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 80%;
+    border-top: solid 1px rgb(214, 214, 214);
+}
